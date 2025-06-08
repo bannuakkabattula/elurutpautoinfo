@@ -1,0 +1,630 @@
+  :root {
+      --police-blue: #1A237E;
+      --safety-orange: #FF6D00;
+      --khaki: #F0E68C;
+      --light-bg: #f8f9fa;
+  }
+
+  body {
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .navbar-brand {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+  }
+
+  /* Navbar */
+  .navbar {
+      background-color: white;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      padding: 15px 0;
+  }
+
+  .dual-logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+  }
+
+  .logo-img {
+      height: 42px;
+      object-fit: contain;
+  }
+
+  .nav-brand-text {
+      color: var(--police-blue);
+      font-size: 1.4rem;
+      letter-spacing: 0.5px;
+  }
+
+  .login-btn {
+      background-color: var(--police-blue);
+      color: white !important;
+      padding: 8px 24px;
+      border-radius: 4px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+  }
+
+  .login-btn:hover {
+      background-color: #121a5a;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Hero Section */
+  .hero-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url('./auto1.png') no-repeat center center/cover;
+      min-height: 65vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      color: white;
+  }
+
+  .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 50px 24px;
+      background: rgb(255 255 255 / 34%);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(6.4px);
+      -webkit-backdrop-filter: blur(6.4px);
+      border: 1px solid rgba(0, 0, 0, 0.32);
+  }
+
+  .hero-title {
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero-subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      opacity: 0.9;
+  }
+
+  .search-container {
+      max-width: 600px;
+      margin: 0 auto;
+      position: relative;
+  }
+
+  .search-input {
+      padding: 15px 25px;
+      border-radius: 50px;
+      border: none;
+      width: 100%;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .search-btn {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      background-color: var(--safety-orange);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+  }
+
+  .search-btn:hover {
+      background-color: #e65100;
+      transform: translateY(-2px);
+  }
+
+  .search-results {
+      background: white;
+      color: #333;
+      border-radius: 8px;
+      margin-top: 10px;
+      display: none;
+      max-height: 300px;
+      overflow-y: auto;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+      position: absolute;
+      width: 100%;
+  }
+
+  .result-item {
+      padding: 12px 20px;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+      transition: background-color 0.2s;
+  }
+
+  .result-item:hover {
+      background-color: #f5f5f5;
+  }
+
+  .result-item strong {
+      color: var(--police-blue);
+  }
+
+  /* Stats Section */
+  .stats-section {
+      padding: 80px 0;
+      background-color: var(--light-bg);
+  }
+
+  .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+  }
+
+  .section-title {
+      color: var(--police-blue);
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1rem;
+  }
+
+  .section-title:after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background-color: var(--safety-orange);
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .section-subtitle {
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto;
+  }
+
+  .stat-card {
+      background: white;
+      border-radius: 10px;
+      padding: 40px 30px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: all 0.4s ease;
+      height: 100%;
+      border-top: 4px solid var(--police-blue);
+  }
+
+  .stat-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .stat-icon {
+      font-size: 2.8rem;
+      color: var(--police-blue);
+      margin-bottom: 20px;
+  }
+
+  .stat-number {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: var(--safety-orange);
+      margin-bottom: 10px;
+  }
+
+  .stat-label {
+      font-size: 1.1rem;
+      color: #555;
+  }
+
+  .progress-container {
+      max-width: 800px;
+      margin: 50px auto 0;
+  }
+
+  .progress {
+      height: 10px;
+      border-radius: 5px;
+  }
+
+  .progress-bar {
+      background-color: var(--khaki);
+      position: relative;
+      overflow: visible;
+  }
+
+  .progress-bar:after {
+      content: '92%';
+      position: absolute;
+      right: 0;
+      top: -25px;
+      background-color: var(--police-blue);
+      color: white;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+  }
+
+  .progress-label {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: 500;
+      color: var(--police-blue);
+  }
+
+  /* ID Card Section */
+  .id-card-section {
+      padding: 80px 0;
+  }
+
+  .id-card-container {
+      perspective: 1000px;
+  }
+
+  .id-card {
+      width: 100%;
+      max-width: 420px;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transform-style: preserve-3d;
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .id-card:hover {
+      transform: rotateY(10deg);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .id-card:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 8px;
+      background-color: var(--police-blue);
+  }
+
+  .id-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+      padding-top: 10px;
+  }
+
+  .id-card-logo {
+      height: 45px;
+  }
+
+  .id-card-title {
+      color: var(--police-blue);
+      font-weight: 700;
+      margin: 0;
+      font-size: 1.3rem;
+  }
+
+  .id-card-body {
+      display: flex;
+      margin-bottom: 25px;
+  }
+
+  .id-card-photo {
+      width: 110px;
+      height: 110px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 3px solid white;
+      margin-right: 20px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .id-card-details {
+      flex: 1;
+  }
+
+  .id-card-details p {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+  }
+
+  .id-card-details strong {
+      color: var(--police-blue);
+  }
+
+  .id-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+  }
+
+  .qr-container {
+      text-align: center;
+  }
+
+  .qr-label {
+      font-size: 0.8rem;
+      color: #666;
+      margin-bottom: 5px;
+  }
+
+  .id-card-qr {
+      width: 90px;
+      height: 90px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+  }
+
+  .id-card-qr img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .verified-badge {
+      background-color: var(--police-blue);
+      color: white;
+      padding: 8px 15px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+  }
+
+  .verified-badge i {
+      margin-right: 5px;
+      font-size: 1rem;
+  }
+
+  .feature-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 30px;
+  }
+
+  .feature-list li {
+      margin-bottom: 15px;
+      padding-left: 30px;
+      position: relative;
+      font-size: 1.05rem;
+  }
+
+  .feature-list li:before {
+      content: '\f00c';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      color: var(--safety-orange);
+  }
+
+  .info-alert {
+      background-color: rgba(26, 35, 126, 0.05);
+      border-left: 4px solid var(--police-blue);
+      padding: 15px;
+      border-radius: 4px;
+  }
+
+  .info-alert i {
+      color: var(--police-blue);
+      margin-right: 10px;
+  }
+
+  /* Footer */
+  .footer {
+      background-color: var(--police-blue);
+      color: white;
+      padding: 60px 0 20px;
+  }
+
+  .footer-logo {
+      height: 50px;
+      margin-bottom: 20px;
+  }
+
+  .footer-about {
+      margin-bottom: 20px;
+      opacity: 0.8;
+      line-height: 1.6;
+  }
+
+  .footer-links h5 {
+      color: white;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
+  }
+
+  .footer-links h5:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 40px;
+      height: 2px;
+      background-color: var(--khaki);
+  }
+
+  .footer-links ul {
+      list-style: none;
+      padding: 0;
+  }
+
+  .footer-links li {
+      margin-bottom: 10px;
+  }
+
+  .footer-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: all 0.3s;
+      display: inline-block;
+  }
+
+  .footer-links a:hover {
+      color: var(--khaki);
+      transform: translateX(5px);
+  }
+
+  .footer-links i {
+      margin-right: 8px;
+      width: 18px;
+      text-align: center;
+  }
+
+  .emergency-number {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--khaki);
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+  }
+
+  .emergency-number i {
+      margin-right: 10px;
+      font-size: 1.5rem;
+  }
+
+  .copyright {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 20px;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.7;
+  }
+
+  .govt-logo {
+      height: 40px;
+      margin-top: 15px;
+  }
+
+  /* Animations */
+  @keyframes pulse {
+      0% {
+          transform: scale(1);
+      }
+
+      50% {
+          transform: scale(1.05);
+      }
+
+      100% {
+          transform: scale(1);
+      }
+  }
+
+  .pulse {
+      animation: pulse 2s infinite;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 992px) {
+      .hero-title {
+          font-size: 2.3rem;
+      }
+
+      .id-card {
+          margin: 0 auto 40px;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .hero-section {
+          min-height: 55vh;
+          padding: 60px 0;
+      }
+
+      .hero-title {
+          font-size: 2rem;
+      }
+
+      .stat-card {
+          padding: 30px 20px;
+      }
+
+      .stat-number {
+          font-size: 2.3rem;
+      }
+
+      .footer {
+          text-align: center;
+      }
+
+      .footer-links h5:after {
+          left: 50%;
+          transform: translateX(-50%);
+      }
+
+      .footer-links ul {
+          margin-bottom: 30px;
+      }
+  }
+
+  @media (max-width: 576px) {
+      .dual-logo {
+          gap: 10px;
+      }
+
+      .logo-img {
+          height: 35px;
+      }
+
+      .nav-brand-text {
+          font-size: 1.1rem;
+      }
+
+      .hero-title {
+          font-size: 1.8rem;
+      }
+
+      .search-input {
+          padding: 12px 20px;
+          font-size: 1rem;
+      }
+
+      .search-btn {
+          padding: 8px 20px;
+      }
+  }
+
+  .marginMinus {
+      margin-top: -80px;
+  }
+
+  .marginMinus img {
+      transform: scaleX(-1);
+      padding: 10px;
+  }
+
+  .policeProfile h4 {
+      text-align: center;
+      margin-top: 10px;
+  }
+
+  .policeProfile img {
+      padding: 28px;
+      border-radius: 20px 20px 0;
+      box-shadow: 15px 18px 18px #d2d2d2;
+  }
