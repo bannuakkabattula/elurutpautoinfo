@@ -584,11 +584,11 @@
       }
 
       .footer {
-          text-align: center;
+          text-align: start;
       }
 
       .footer-links h5:after {
-          left: 50%;
+          left: 5%;
           transform: translateX(-50%);
       }
 
@@ -653,4 +653,18 @@
   .swiper {
       width: 600px;
       height: 300px;
+  }
+
+  @media screen and (max-width:576px) {
+      .cityTitle {
+          font-size: 18px;
+      }
+
+      .bannerTitle {
+          font-size: 34px;
+      }
+  }
+
+  .text-decoration-none {
+      text-decoration: none;
   }
