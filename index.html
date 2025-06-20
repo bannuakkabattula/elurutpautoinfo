@@ -28,6 +28,11 @@
       href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
       rel="stylesheet"
     />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Navigation -->
@@ -35,9 +40,6 @@
       <div class="container">
         <div class="dual-logo">
           <img src="logo.png" class="logo-img" alt="" />
-          <!-- <img src="/appolice.png" alt="Eluru  Logo"  />
-          <img src="/elurupolice.png" alt="AP Police Logo" class="logo-img" />
-          <span class="nav-brand-text text-bold">ECTPAI <br /></span> <br /> -->
         </div>
         <div>
           <span><img src="/apnewcm.png" class="politicians" alt="" /></span>
@@ -45,16 +47,12 @@
           <span><img src="/pk.png" class="politicians" alt="" /></span>
           <span><img src="/vanitha.png" class="politicians" alt="" /></span>
         </div>
-
-        <!-- <span class="text-bold cityTitle"
-          >ELURU CITY TRAFFIC POLICE AUTO INFO</span
-        > -->
       </div>
     </nav>
 
     <div class="section pb-2">
       <div class="title">
-        <h1 class="bannerTitle">SAFE JOURNEY IN ELURU</h1>
+        <h1 class="bannerTitle">SAFE AUTO JOURNEYS NOW IN ELURU</h1>
       </div>
       <div class="row">
         <div class="owl-carousel owl-theme">
@@ -64,9 +62,6 @@
           <div class="processImge item">
             <img src="./pr-2.jpeg" width="100%" alt="" />
           </div>
-          <!-- <div class="processImge item">
-            <img src="./pr-3.webp" width="100%" alt="" />
-          </div> -->
           <div class="processImge item">
             <img src="./pr-4.webp" width="100%" alt="" />
           </div>
@@ -80,10 +75,10 @@
     <section class="hero-section">
       <div class="d-flex justify-content-center">
         <div class="hero-content">
-          <h1 class="hero-title">Auto Driver Identity Portal</h1>
-          <p class="hero-subtitle">
-            Verified database of all registered auto drivers in Eluru
-          </p>
+          <h1 class="hero-title">
+            You Can Search by<br />
+            Auto Driver Name or Auto Vehicle Number
+          </h1>
 
           <div class="search-container">
             <input
@@ -123,7 +118,7 @@
         </div>
 
         <div class="row">
-          <div class="col-6 mb-4 ml-lg-auto">
+          <div class="col-4 mb-4 ml-lg-auto">
             <div class="stat-card">
               <div class="stat-icon">
                 <i class="fas fa-route"></i>
@@ -133,7 +128,17 @@
             </div>
           </div>
 
-          <div class="col-6 mb-4">
+          <div class="col-4 mb-4 ml-lg-auto">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-taxi"></i>
+              </div>
+              <div class="stat-number" id="autoStandsCounter">0</div>
+              <p class="stat-label">Registered Vehicles</p>
+            </div>
+          </div>
+
+          <div class="col-4 mb-4">
             <div class="stat-card">
               <div class="stat-icon">
                 <i class="fas fa-id-card"></i>
@@ -142,10 +147,6 @@
               <p class="stat-label">Registered Drivers</p>
             </div>
           </div>
-
-          <!-- <div class="col-md-6">
-            <img src="./idcard.png" class="idcardSec" width="100%" alt="" />
-          </div> -->
         </div>
       </div>
     </section>
@@ -157,7 +158,9 @@
         <p>Quick, Safe & Verified Auto Travel in Eluru</p>
         <div class="infobox-container">
           <div class="infobox">
-            <div class="icon">🛺</div>
+            <div class="icon">
+              <i class="fa-regular fa-id-card"></i> <!-- Outline style -->
+</i></div>
             <h2>Step 1: See the ID Card</h2>
             <p>
               Every auto driver will have a digital ID card with a QR code and
@@ -165,14 +168,19 @@
             </p>
           </div>
           <div class="infobox">
-            <div class="icon">📱</div>
+            <div class="icon"><i class="fa-solid fa-qrcode"></i>    
+     
+            </div>
             <h2>Step 2: Scan the QR Code</h2>
             <p>
               Use your mobile camera or app to scan the QR code on the ID card.
             </p>
           </div>
           <div class="infobox">
-            <div class="icon">🔍</div>
+            <div class="icon">
+                       <i class="fa-solid fa-magnifying-glass"></i>  <!-- Solid -->
+             
+            </div>
             <h2>Step 3: Check Driver Details</h2>
             <p>
               You’ll instantly see the driver’s: Name Photo Vehicle number
@@ -180,7 +188,7 @@
             </p>
           </div>
           <div class="infobox">
-            <div class="icon">✅</div>
+            <div class="icon"> <i class="fa-regular fa-circle-check"></i> <!-- Outline style --></div>
             <h2>Step 4: Verify & Travel Safely</h2>
             <p>
               If everything looks good, start your ride with confidence. You

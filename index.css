@@ -78,9 +78,6 @@
 
   /* Hero Section */
   .hero-section {
-      /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-          url('./auto1.png') no-repeat center center/cover; */
-      min-height: 65vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -94,10 +91,6 @@
       text-align: center;
       padding: 50px 24px;
       border-radius: 16px;
-      /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-      /* backdrop-filter: blur(6.4px);
-      -webkit-backdrop-filter: blur(6.4px);
-      border: 1px solid rgba(0, 0, 0, 0.32); */
   }
 
   .hero-title {
@@ -569,7 +562,6 @@
 
   @media (max-width: 768px) {
       .hero-section {
-          min-height: 55vh;
           padding: 60px 0;
       }
 
@@ -636,6 +628,20 @@
       }
   }
 
+  @media screen and (max-width: 376px) {
+      .politicians {
+          width: 30px !important;
+          height: 34px !important;
+      }
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 576px) {
+      .politicians {
+          width: 40px !important;
+          height: 44px !important;
+      }
+  }
+
   .marginMinus {
       margin-top: -80px;
   }
@@ -673,17 +679,8 @@
       }
 
       .bannerTitle {
-          font-size: 34px;
+          font-size: 24px;
       }
-
-      .politicians {
-          width: 40px !important;
-          border: 2px solid #1a237e;
-          margin-right: 5px;
-          height: 44px !important;
-      }
-
-
   }
 
   .text-decoration-none {
@@ -694,7 +691,7 @@
   .infobox {
       background-color: #fff;
       transition: background-color 0.10s ease, color 0.10s ease;
-
+      transition: color 0.3s ease;
   }
 
   .infobox:hover {
@@ -708,6 +705,11 @@
 
   .infobox:hover p {
       color: #fff;
+  }
+
+  .infobox:hover .icon i {
+      color: #fff;
+      /* color on infobox hover */
   }
 
   .infobox-section {
@@ -752,6 +754,12 @@
       margin-bottom: 15px;
   }
 
+  .infobox .icon i {
+      color: #b62325;
+  }
+
+
+
   .infobox h2 {
       font-size: 1.3rem;
       color: #1a1a40;
@@ -774,11 +782,13 @@
       text-decoration: underline;
   }
 
+  .infobox img {
+      width: 40px;
+  }
 
   .politicians {
       width: 62px;
-      /* border-radius: 50%; */
-      border: 2px solid #1a237e;
+      border: 2px solid #a4a4a4;
       margin-right: 5px;
       height: 65px;
   }
