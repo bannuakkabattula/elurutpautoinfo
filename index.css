@@ -561,8 +561,12 @@
   }
 
   @media (max-width: 768px) {
+      .hero-content {
+          padding: 30px 10px;
+      }
+
       .hero-section {
-          padding: 60px 0;
+          padding: 40px 0;
       }
 
       .hero-title {
@@ -628,7 +632,7 @@
       }
 
       .stats-section {
-          padding: 40px;
+          padding: 40px 0;
       }
 
       .infobox-section {
