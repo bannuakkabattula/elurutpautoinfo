@@ -23,9 +23,14 @@
 
   /* Navbar */
   .navbar {
-      background-color: white;
+
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(8.6px);
+      -webkit-backdrop-filter: blur(8.6px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-      padding: 15px 0;
+      padding: 10px 0;
   }
 
   .dual-logo {
@@ -35,7 +40,7 @@
   }
 
   .logo-img {
-      height: 60px;
+      height: 44px;
       object-fit: contain;
   }
 
