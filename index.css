@@ -626,6 +626,14 @@
       .search-btn {
           padding: 8px 20px;
       }
+
+      .stats-section {
+          padding: 40px;
+      }
+
+      .infobox-section {
+          padding: 40px;
+      }
   }
 
   @media screen and (max-width: 376px) {
