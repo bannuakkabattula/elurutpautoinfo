@@ -24,11 +24,7 @@
   /* Navbar */
   .navbar {
 
-      background: rgba(255, 255, 255, 0.2);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(8.6px);
-      -webkit-backdrop-filter: blur(8.6px);
-      border: 1px solid rgba(255, 255, 255, 0.3);
+      background-color: white;
       box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
       padding: 10px 0;
   }
@@ -617,8 +613,10 @@
       }
 
       .logo-img {
-          height: 35px;
+          height: 30px;
       }
+
+
 
       .nav-brand-text {
           font-size: 1.1rem;
@@ -676,6 +674,13 @@
 
       .bannerTitle {
           font-size: 34px;
+      }
+
+      .politicians {
+          width: 40px !important;
+          border: 2px solid #1a237e;
+          margin-right: 5px;
+          height: 44px !important;
       }
 
 
