@@ -36,7 +36,7 @@
   }
 
   .logo-img {
-      height: 44px;
+      height: 80px;
       object-fit: contain;
   }
 
@@ -609,9 +609,18 @@
       }
 
       .logo-img {
-          height: 22px;
+          /* height: 22px; */
+          text-align: center;
       }
 
+      .navRight {
+          text-align: center;
+          margin-top: 12px;
+      }
+
+      .navbar .container {
+          justify-content: center;
+      }
 
 
       .nav-brand-text {
@@ -642,15 +651,19 @@
 
   @media screen and (max-width: 376px) {
       .politicians {
-          width: 30px !important;
-          height: 34px !important;
+          width: 40px !important;
+          height: 44px !important;
+      }
+
+      .bannerTitle {
+          font-size: 20px !important;
       }
   }
 
   @media screen and (min-width: 376px) and (max-width: 576px) {
       .politicians {
-          width: 40px !important;
-          height: 44px !important;
+          width: 63px !important;
+          height: 69px !important;
       }
   }
 
