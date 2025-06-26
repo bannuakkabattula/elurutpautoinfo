@@ -448,10 +448,8 @@
   }
 
   .footer-logo {
-      height: 80px;
+      height: 50px;
       margin-bottom: 20px;
-      background-color: #fff;
-      padding: 4px;
   }
 
   .footer-about {
@@ -651,6 +649,11 @@
 
       .infobox-section {
           padding: 40px;
+      }
+
+      .infobox-container {
+
+          padding: 0 4px !important;
       }
   }
 
