@@ -448,8 +448,10 @@
   }
 
   .footer-logo {
-      height: 50px;
+      height: 80px;
       margin-bottom: 20px;
+      background-color: #fff;
+      padding: 4px;
   }
 
   .footer-about {
